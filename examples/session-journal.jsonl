@@ -1,0 +1,8 @@
+# session journal for the pagination feature branch (JSONL, one event per line)
+{"type": "command", "command": "pytest -q", "exit_code": 1}
+{"type": "note", "text": "first run failed: off-by-one in cursor decoding"}
+{"type": "edit", "files": ["src/pagination.py"]}
+{"type": "command", "command": "pytest -q", "exit_code": 0}
+{"type": "command", "command": "ruff check src", "exit_code": 0}
+{"type": "command", "command": "mypy src", "exit_code": 0}
+{"type": "decision", "text": "kept cursors opaque base64 instead of numeric offsets"}

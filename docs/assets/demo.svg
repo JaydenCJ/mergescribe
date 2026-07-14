@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="640" viewBox="0 0 920 640" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14">
+  <!-- Terminal transcript of a real run of `mergescribe pr` against the
+       deterministic demo repository (examples/build_demo_repo.sh) with
+       examples/session-journal.jsonl. Text is copied verbatim from an
+       actual execution. -->
+  <rect width="920" height="640" rx="10" fill="#0d1117"/>
+  <rect width="920" height="34" rx="10" fill="#161b22"/>
+  <rect y="20" width="920" height="14" fill="#161b22"/>
+  <circle cx="22" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="42" cy="17" r="6" fill="#febc2e"/>
+  <circle cx="62" cy="17" r="6" fill="#28c840"/>
+  <text x="460" y="22" fill="#8b949e" text-anchor="middle" font-size="12">mergescribe — the PR body your session already wrote</text>
+  <g fill="#c9d1d9">
+    <text x="24" y="62"><tspan fill="#7ee787">$</tspan> mergescribe pr --base main --journal session.jsonl</text>
+    <text x="24" y="90" fill="#d2a8ff"># feat(api): add cursor pagination to list endpoints (+2 more commits)</text>
+    <text x="24" y="118" fill="#79c0ff">## Summary</text>
+    <text x="24" y="142">- Add cursor pagination to list endpoints</text>
+    <text x="24" y="166">- Return 404 instead of 500 for missing cursor</text>
+    <text x="24" y="194" fill="#79c0ff">## Changes</text>
+    <text x="24" y="218" fill="#8b949e">### Features</text>
+    <text x="24" y="242">- <tspan fill="#ffa657">api:</tspan> add cursor pagination to list endpoints (`593124a`)</text>
+    <text x="24" y="266" fill="#8b949e">### Fixes</text>
+    <text x="24" y="290">- <tspan fill="#ffa657">api:</tspan> return 404 instead of 500 for missing cursor (`a99e0b1`)</text>
+    <text x="24" y="318" fill="#79c0ff">## Verification</text>
+    <text x="24" y="342" fill="#8b949e">| Check     | Command          | Runs | Last result   |</text>
+    <text x="24" y="366">| test      | `pytest -q`      | 2    | <tspan fill="#7ee787">pass (exit 0)</tspan> |</text>
+    <text x="24" y="390">| typecheck | `mypy src`       | 1    | <tspan fill="#7ee787">pass (exit 0)</tspan> |</text>
+    <text x="24" y="414">| lint      | `ruff check src` | 1    | <tspan fill="#7ee787">pass (exit 0)</tspan> |</text>
+    <text x="24" y="442" fill="#79c0ff">## Session notes</text>
+    <text x="24" y="466">- first run failed: off-by-one in cursor decoding</text>
+    <text x="24" y="490">- <tspan fill="#d2a8ff">decision:</tspan> kept cursors opaque base64 instead of numeric offsets</text>
+    <text x="24" y="518" fill="#79c0ff">## Linked issues</text>
+    <text x="24" y="542">Closes <tspan fill="#ffa657">#42</tspan>, <tspan fill="#ffa657">#57</tspan>.</text>
+    <text x="24" y="578" fill="#8b949e">_Generated deterministically by mergescribe from 3 commits</text>
+    <text x="24" y="602" fill="#8b949e">and 1 session journal — no LLM involved._</text>
+  </g>
+</svg>
