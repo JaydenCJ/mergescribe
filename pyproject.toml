@@ -9,7 +9,7 @@ description = "Builds PR descriptions and changelogs deterministically from sess
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "JaydenCJ" }]
+authors = [{ name = "JaydenCJ", email = "aisingioro.kiyon@gmail.com" }]
 keywords = ["pull-request", "changelog", "git", "conventional-commits", "release-notes", "deterministic", "cli"]
 classifiers = [
     "Development Status :: 3 - Alpha",
